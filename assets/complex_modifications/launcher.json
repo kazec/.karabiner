@@ -1,0 +1,285 @@
+{
+  "title": "App Launcher",
+  "rules": [{
+    "description": "Launch Applications using Fn Key",
+    "manipulators": [
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "b",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/Xcode-beta.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "c",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "osascript -e 'tell application \"Google Chrome\" to activate'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "e",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/Safari.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "f",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "osascript -e 'tell application \"Finder\" to activate'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "g",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/Fork.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "h",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/Atom.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "i",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/iTunes.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "k",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/Utilities/Activity Monitor.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "l",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/Lark.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "m",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/Mail.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "n",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/Notion.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "n",
+          "modifiers": {
+            "mandatory": ["fn", "left_shift"]
+          }
+        },
+        "to": [{
+            "shell_command": "open 'x-launchbar:select?abbreviation=AN' && osascript -e 'tell application \"System Events\" to key code 36'"
+          }
+        ]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "o",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/Notes.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "p",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/Utilities/Activity Monitor.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "q",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/Reminders.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "r",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/Reeder.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "t",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/Typora.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "v",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/IINA.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "x",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/XMind ZEN.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "y",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/Stickies.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "z",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/Atom.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "spacebar",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/Xcode.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "comma",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/System Preferences.app'"
+        }]
+      }
+    ]
+  }]
+}
