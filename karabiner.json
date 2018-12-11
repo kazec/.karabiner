@@ -928,7 +928,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open '/Applications/Mail.app'"
+                                        "shell_command": "open '/Applications/Utilities/Activity Monitor.app'"
                                     }
                                 ],
                                 "type": "basic"
@@ -1585,7 +1585,7 @@
                 }
             ],
             "name": "Poker",
-            "selected": false,
+            "selected": true,
             "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
@@ -2497,7 +2497,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open '/Applications/Mail.app'"
+                                        "shell_command": "open '/Applications/Utilities/Activity Monitor.app'"
                                     }
                                 ],
                                 "type": "basic"
@@ -3076,7 +3076,7 @@
                 }
             ],
             "name": "AIK",
-            "selected": true,
+            "selected": false,
             "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,

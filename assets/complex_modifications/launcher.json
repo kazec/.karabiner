@@ -120,7 +120,7 @@
           }
         },
         "to": [{
-          "shell_command": "open '/Applications/Mail.app'"
+          "shell_command": "open '/Applications/Utilities/Activity Monitor.app'"
         }]
       },
       {
