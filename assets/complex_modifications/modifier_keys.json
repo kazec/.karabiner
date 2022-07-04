@@ -64,11 +64,6 @@
     {
       "description": "Input Sources Switcher (Poker)",
       "manipulators": [{
-          "conditions": [{
-            "type": "variable_if",
-            "name": "japanese_mode",
-            "value": 0
-          }],
           "type": "basic",
           "from": {
             "key_code": "right_control",
@@ -79,114 +74,12 @@
           "to": [{
             "key_code": "caps_lock"
           }]
-        },
-        {
-          "conditions": [{
-              "type": "input_source_if",
-              "input_sources": [{
-                "language": "ja"
-              }]
-            },
-            {
-              "type": "variable_if",
-              "name": "japanese_mode",
-              "value": 1
-            }
-          ],
-          "type": "basic",
-          "from": {
-            "key_code": "right_control",
-            "modifiers": {
-              "optional": "caps_lock"
-            }
-          },
-          "to": [{
-            "key_code": "japanese_eisuu"
-          }]
-        },
-        {
-          "conditions": [{
-              "type": "input_source_unless",
-              "input_sources": [{
-                "language": "ja"
-              }]
-            },
-            {
-              "type": "variable_if",
-              "name": "japanese_mode",
-              "value": 1
-            }
-          ],
-          "type": "basic",
-          "from": {
-            "key_code": "right_control",
-            "modifiers": {
-              "optional": "caps_lock"
-            }
-          },
-          "to": [{
-            "key_code": "japanese_kana"
-          }]
-        },
-        {
-          "conditions": [{
-            "type": "variable_if",
-            "name": "japanese_mode",
-            "value": 0
-          }],
-          "type": "basic",
-          "from": {
-            "key_code": "right_control",
-            "modifiers": {
-              "mandatory": "fn"
-            }
-          },
-          "to": [{
-            "set_variable": {
-              "name": "japanese_mode",
-              "value": 1
-            }
-          }, {
-            "key_code": "japanese_kana"
-          }]
-        },
-        {
-          "conditions": [{
-            "type": "variable_if",
-            "name": "japanese_mode",
-            "value": 1
-          }],
-          "type": "basic",
-          "from": {
-            "key_code": "right_control",
-            "modifiers": {
-              "mandatory": "fn"
-            }
-          },
-          "to": [{
-              "set_variable": {
-                "name": "japanese_mode",
-                "value": 0
-              }
-            },
-            {
-              "key_code": "japanese_eisuu"
-            },
-            {
-              "key_code": "caps_lock"
-            }
-          ]
         }
       ]
     },
     {
       "description": "Input Sources Switcher (AIK)",
       "manipulators": [{
-          "conditions": [{
-            "type": "variable_if",
-            "name": "japanese_mode",
-            "value": 0
-          }],
           "type": "basic",
           "from": {
             "key_code": "fn",
@@ -197,103 +90,6 @@
           "to": [{
             "key_code": "caps_lock"
           }]
-        },
-        {
-          "conditions": [{
-              "type": "input_source_if",
-              "input_sources": [{
-                "language": "ja"
-              }]
-            },
-            {
-              "type": "variable_if",
-              "name": "japanese_mode",
-              "value": 1
-            }
-          ],
-          "type": "basic",
-          "from": {
-            "key_code": "fn",
-            "modifiers": {
-              "optional": "caps_lock"
-            }
-          },
-          "to": [{
-            "key_code": "japanese_eisuu"
-          }]
-        },
-        {
-          "conditions": [{
-              "type": "input_source_unless",
-              "input_sources": [{
-                "language": "ja"
-              }]
-            },
-            {
-              "type": "variable_if",
-              "name": "japanese_mode",
-              "value": 1
-            }
-          ],
-          "type": "basic",
-          "from": {
-            "key_code": "fn",
-            "modifiers": {
-              "optional": "caps_lock"
-            }
-          },
-          "to": [{
-            "key_code": "japanese_kana"
-          }]
-        },
-        {
-          "conditions": [{
-            "type": "variable_if",
-            "name": "japanese_mode",
-            "value": 0
-          }],
-          "type": "basic",
-          "from": {
-            "key_code": "fn",
-            "modifiers": {
-              "mandatory": "fn"
-            }
-          },
-          "to": [{
-            "set_variable": {
-              "name": "japanese_mode",
-              "value": 1
-            }
-          }, {
-            "key_code": "japanese_kana"
-          }]
-        },
-        {
-          "conditions": [{
-            "type": "variable_if",
-            "name": "japanese_mode",
-            "value": 1
-          }],
-          "type": "basic",
-          "from": {
-            "key_code": "fn",
-            "modifiers": {
-              "mandatory": "fn"
-            }
-          },
-          "to": [{
-              "set_variable": {
-                "name": "japanese_mode",
-                "value": 0
-              }
-            },
-            {
-              "key_code": "japanese_eisuu"
-            },
-            {
-              "key_code": "caps_lock"
-            }
-          ]
         }
       ]
     }

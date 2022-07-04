@@ -6,37 +6,13 @@
       {
         "type": "basic",
         "from": {
-          "key_code": "b",
-          "modifiers": {
-            "mandatory": "fn"
-          }
-        },
-        "to": [{
-          "shell_command": "open '/Applications/Xcode-beta.app'"
-        }]
-      },
-      {
-        "type": "basic",
-        "from": {
-          "key_code": "c",
-          "modifiers": {
-            "mandatory": "fn"
-          }
-        },
-        "to": [{
-          "shell_command": "osascript -e 'tell application \"Google Chrome\" to activate'"
-        }]
-      },
-      {
-        "type": "basic",
-        "from": {
           "key_code": "e",
           "modifiers": {
             "mandatory": "fn"
           }
         },
         "to": [{
-          "shell_command": "open '/Applications/Safari.app'"
+          "shell_command": "open -a 'Microsoft Edge'"
         }]
       },
       {
@@ -48,7 +24,7 @@
           }
         },
         "to": [{
-          "shell_command": "osascript -e 'tell application \"Finder\" to activate'"
+          "shell_command": "open -a Finder"
         }]
       },
       {
@@ -72,7 +48,7 @@
           }
         },
         "to": [{
-          "shell_command": "open '/Applications/Atom.app'"
+          "shell_command": "open '/Applications/Hammerspoon.app'"
         }]
       },
       {
@@ -84,7 +60,7 @@
           }
         },
         "to": [{
-          "shell_command": "open '/Applications/iTunes.app'"
+          "shell_command": "open '/Applications/Xcode.app/Contents/Instruments.app'"
         }]
       },
       {
@@ -96,7 +72,7 @@
           }
         },
         "to": [{
-          "shell_command": "open '/Applications/Utilities/Activity Monitor.app'"
+          "shell_command": "open '/Applications/Keynote.app'"
         }]
       },
       {
@@ -157,7 +133,7 @@
           }
         },
         "to": [{
-          "shell_command": "open '/Applications/Notes.app'"
+          "shell_command": "open '/Applications/Microsoft OneNote.app'"
         }]
       },
       {
@@ -169,19 +145,7 @@
           }
         },
         "to": [{
-          "shell_command": "open '/Applications/Utilities/Activity Monitor.app'"
-        }]
-      },
-      {
-        "type": "basic",
-        "from": {
-          "key_code": "q",
-          "modifiers": {
-            "mandatory": "fn"
-          }
-        },
-        "to": [{
-          "shell_command": "open '/Applications/Reminders.app'"
+          "shell_command": "open '/Applications/Pixelmator.app'"
         }]
       },
       {
@@ -193,7 +157,7 @@
           }
         },
         "to": [{
-          "shell_command": "open '/Applications/Reeder.app'"
+          "shell_command": "open '/Applications/NetNewsWire.app'"
         }]
       },
       {
@@ -206,6 +170,18 @@
         },
         "to": [{
           "shell_command": "open '/Applications/Typora.app'"
+        }]
+      },
+      {
+        "type": "basic",
+        "from": {
+          "key_code": "u",
+          "modifiers": {
+            "mandatory": "fn"
+          }
+        },
+        "to": [{
+          "shell_command": "open '/Applications/WeChat.app'"
         }]
       },
       {
@@ -229,19 +205,7 @@
           }
         },
         "to": [{
-          "shell_command": "open '/Applications/XMind ZEN.app'"
-        }]
-      },
-      {
-        "type": "basic",
-        "from": {
-          "key_code": "y",
-          "modifiers": {
-            "mandatory": "fn"
-          }
-        },
-        "to": [{
-          "shell_command": "open '/Applications/Stickies.app'"
+          "shell_command": "open '/Applications/Visual Studio Code.app'"
         }]
       },
       {
@@ -253,7 +217,7 @@
           }
         },
         "to": [{
-          "shell_command": "open '/Applications/Atom.app'"
+          "shell_command": "open '/Applications/2Do.app'"
         }]
       },
       {
@@ -265,7 +229,7 @@
           }
         },
         "to": [{
-          "shell_command": "open '/Applications/Xcode.app'"
+          "shell_command": "open -a Xcode"
         }]
       },
       {
