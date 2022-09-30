@@ -1,8 +1,10 @@
 {
   "title": "Modifier Keys",
-  "rules": [{
-      "description": "Modifier Keys Setup",
-      "manipulators": [{
+  "rules": [
+    {
+      "description": "[Mod] Modifier Keys",
+      "manipulators": [
+        {
           "type": "basic",
           "from": {
             "key_code": "caps_lock",
@@ -10,60 +12,78 @@
               "optional": "any"
             }
           },
-          "to": [{
-            "key_code": "fn"
-          }],
-          "to_if_alone": [{
-            "key_code": "escape"
-          }]
+          "to": [
+            {
+              "key_code": "fn"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "escape"
+            }
+          ]
         },
         {
           "type": "basic",
           "from": {
             "key_code": "left_option"
           },
-          "to": [{
-            "key_code": "left_option"
-          }],
-          "to_if_alone": [{
-            "pointing_button": "button1"
-          }]
+          "to": [
+            {
+              "key_code": "left_option"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "pointing_button": "button1"
+            }
+          ]
         }
       ]
     },
     {
-      "description": "Shift Parens",
-      "manipulators": [{
+      "description": "[Mod] Shift Parens",
+      "manipulators": [
+        {
           "from": {
             "key_code": "left_shift"
           },
-          "to": [{
-            "key_code": "left_shift"
-          }],
-          "to_if_alone": [{
-            "key_code": "9",
-            "modifiers": "left_shift"
-          }],
+          "to": [
+            {
+              "key_code": "left_shift"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "9",
+              "modifiers": "left_shift"
+            }
+          ],
           "type": "basic"
         },
         {
           "from": {
             "key_code": "right_shift"
           },
-          "to": [{
-            "key_code": "right_shift"
-          }],
-          "to_if_alone": [{
-            "key_code": "0",
-            "modifiers": "right_shift"
-          }],
+          "to": [
+            {
+              "key_code": "right_shift"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "0",
+              "modifiers": "right_shift"
+            }
+          ],
           "type": "basic"
         }
       ]
     },
     {
-      "description": "Input Sources Switcher (Poker)",
-      "manipulators": [{
+      "description": "[Mod] Input Source Switcher",
+      "manipulators": [
+        {
           "type": "basic",
           "from": {
             "key_code": "right_control",
@@ -71,25 +91,25 @@
               "optional": "caps_lock"
             }
           },
-          "to": [{
-            "key_code": "caps_lock"
-          }]
-        }
-      ]
-    },
-    {
-      "description": "Input Sources Switcher (AIK)",
-      "manipulators": [{
+          "to": [
+            {
+              "key_code": "caps_lock"
+            }
+          ]
+        },
+        {
           "type": "basic",
           "from": {
-            "key_code": "fn",
+            "apple_vendor_top_case_key_code": "keyboard_fn",
             "modifiers": {
               "optional": "caps_lock"
             }
           },
-          "to": [{
-            "key_code": "caps_lock"
-          }]
+          "to": [
+            {
+              "key_code": "caps_lock"
+            }
+          ]
         }
       ]
     }

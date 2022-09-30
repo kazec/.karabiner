@@ -1,0 +1,354 @@
+{
+  "title": "Fn Apps Launcher",
+  "rules": [
+    {
+      "description": "[FnLauncher] Fn+Spacebar -> Xcode",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Xcode"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "1",
+            "modifiers": {
+              "mandatory": [
+                "fn",
+                "spacebar"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Xcode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "[FnLauncher] Fn+A-Z -> Apps",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control"
+          },
+          "to": [
+            {
+              "key_code": "left_control"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "shell_command": "open -a LaunchBar"
+            }
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 250
+          }
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Microsoft Edge'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Finder"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Fork"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Hammerspoon"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Instruments"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Keynote"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Lark"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "m",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Activity Monitor'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Notion"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "fn",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Notes"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Notes"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Adobe LightRoom'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a NetNewsWire"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Typora"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a WeChat"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a IINA"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "x",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Visual Studio Code'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "y",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "key_code": "y",
+              "modifiers": {
+                "mandatory": [
+                  "left_shift",
+                  "left_command"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Clash for Windows'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'System Preferences'"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
