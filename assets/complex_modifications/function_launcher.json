@@ -2,43 +2,7 @@
   "title": "Fn Apps Launcher",
   "rules": [
     {
-      "description": "[FnLauncher] Fn+Spacebar -> Xcode",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": "fn"
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a Xcode"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "1",
-            "modifiers": {
-              "mandatory": [
-                "fn",
-                "spacebar"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a Xcode"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "[FnLauncher] Fn+A-Z -> Apps",
+      "description": "[FnLauncher] Modifier -> Apps",
       "manipulators": [
         {
           "type": "basic",
@@ -52,12 +16,73 @@
           ],
           "to_if_alone": [
             {
-              "shell_command": "open -a LaunchBar"
+              "shell_command": "open -b at.obdev.LaunchBar"
             }
-          ],
-          "parameters": {
-            "basic.to_if_alone_timeout_milliseconds": 250
-          }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "[FnLauncher] Fn -> Apps",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.microsoft.VSCode'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.bitwarden.desktop'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "fn",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "afplay /System/Library/Sounds/Funk.aiff"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "c",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.openai.chat'"
+            }
+          ]
         },
         {
           "type": "basic",
@@ -69,7 +94,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Arc'"
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=company.thebrowser.Browser'"
             }
           ]
         },
@@ -83,7 +108,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a Finder"
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.apple.finder'"
             }
           ]
         },
@@ -97,7 +122,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a Fork"
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.DanPristupov.Forkly'"
             }
           ]
         },
@@ -111,7 +136,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a Hammerspoon"
+              "shell_command": "afplay /System/Library/Sounds/Funk.aiff"
             }
           ]
         },
@@ -132,6 +157,23 @@
         {
           "type": "basic",
           "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "fn",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.apple.ScreenContinuity'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
             "key_code": "k",
             "modifiers": {
               "mandatory": "fn"
@@ -139,7 +181,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a Keynote"
+              "shell_command": "afplay /System/Library/Sounds/Funk.aiff"
             }
           ]
         },
@@ -153,7 +195,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a Lark"
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.larksuite.larkApp'"
             }
           ]
         },
@@ -167,7 +209,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Activity Monitor'"
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.apple.ActivityMonitor'"
             }
           ]
         },
@@ -181,7 +223,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a Notion"
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.apple.iCal'"
             }
           ]
         },
@@ -198,7 +240,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a Notes"
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.apple.Notes'"
             }
           ]
         },
@@ -212,7 +254,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a Notes"
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=md.obsidian'"
             }
           ]
         },
@@ -226,7 +268,21 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Adobe LightRoom'"
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.apple.Preview'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "afplay /System/Library/Sounds/Funk.aiff"
             }
           ]
         },
@@ -240,7 +296,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a NetNewsWire"
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.apple.reminders'"
             }
           ]
         },
@@ -254,49 +310,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a Typora"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "u",
-            "modifiers": {
-              "mandatory": "fn"
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a WeChat"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "v",
-            "modifiers": {
-              "mandatory": "fn"
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a IINA"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "x",
-            "modifiers": {
-              "mandatory": "fn"
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Visual Studio Code'"
+              "shell_command": "afplay /System/Library/Sounds/Funk.aiff"
             }
           ]
         },
@@ -310,13 +324,63 @@
           },
           "to": [
             {
-              "key_code": "y",
-              "modifiers": {
-                "mandatory": [
-                  "left_shift",
-                  "left_command"
-                ]
-              }
+              "shell_command": "afplay /System/Library/Sounds/Funk.aiff"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "afplay /System/Library/Sounds/Funk.aiff"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.tencent.xinWeChat'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "x",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.apple.dt.Xcode'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "y",
+            "modifiers": {
+              "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "afplay /System/Library/Sounds/Funk.aiff"
             }
           ]
         },
@@ -330,7 +394,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Clash for Windows'"
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=dev.zed.Zed'"
             }
           ]
         },
@@ -344,7 +408,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'System Preferences'"
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.apple.systempreferences'"
             }
           ]
         }
