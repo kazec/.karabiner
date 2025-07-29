@@ -1,8 +1,8 @@
 {
-  "title": "Fn Apps Launcher",
+  "title": "App Launcher",
   "rules": [
     {
-      "description": "[FnLauncher] Modifier -> Apps",
+      "description": "[AppLauncher] Modifier -> Apps",
       "manipulators": [
         {
           "type": "basic",
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "description": "[FnLauncher] Fn -> Apps",
+      "description": "[AppLauncher] Fn -> Apps",
       "manipulators": [
         {
           "type": "basic",
@@ -49,7 +49,7 @@
           },
           "to": [
             {
-              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.bitwarden.desktop'"
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.1password.1password'"
             }
           ]
         },
@@ -80,7 +80,7 @@
           },
           "to": [
             {
-              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.openai.chat'"
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=com.todesktop.230313mzl4w4u92'"
             }
           ]
         },
@@ -264,6 +264,23 @@
             "key_code": "p",
             "modifiers": {
               "mandatory": "fn"
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -g 'hammerspoon://toggle_app?id=ai.perplexity.mac'"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "fn",
+                "left_shift"
+              ]
             }
           },
           "to": [
